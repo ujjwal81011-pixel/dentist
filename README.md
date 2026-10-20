@@ -26,4 +26,13 @@ A responsive, elegant, and calming dental healthcare website built with modern H
 
 ## Deployment
 
-Deployable instantly on [Vercel](https://vercel.com) or any static hosting platform.
+### 1-Click Deploy to Vercel
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fujjwal81011-pixel%2Fdentist)
+
+Click the button above or follow these simple steps to deploy:
+1. Log in to [Vercel](https://vercel.com).
+2. Go to [https://vercel.com/new](https://vercel.com/new).
+3. Under **Import Git Repository**, select **`ujjwal81011-pixel/dentist`**.
+4. Click **Deploy**. Vercel will automatically build and publish your website to a live `*.vercel.app` URL with continuous updates whenever you push changes!
+
