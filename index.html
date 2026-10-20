@@ -1,0 +1,1326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="[Dental Clinic Name] provides gentle, state-of-the-art dental care for families. Cosmetic dentistry, dental implants, clear aligners, and pain-free preventative care.">
+  <meta name="keywords" content="dentist, cosmetic dentistry, dental clinic, dental implants, teeth whitening, emergency dentist">
+  <title>[Dental Clinic Name] | Modern &amp; Gentle Family Dentistry</title>
+
+  <!-- Google Fonts: Plus Jakarta Sans for pristine modern typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       Top Announcement Bar
+       ========================================================================== -->
+  <div class="announcement-bar">
+    <div class="container announcement-inner">
+      <div class="announcement-left">
+        <span class="announcement-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          New Patient Special: Comprehensive Exam &amp; 3D Imaging for $99
+        </span>
+        <span class="emergency-pill">Emergency Dental Care On-Call</span>
+      </div>
+      <div class="announcement-right">
+        <span class="announcement-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          Mon - Fri: 8:00 AM – 6:00 PM | Sat: 9:00 AM – 2:00 PM
+        </span>
+        <span class="announcement-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          [City, State]
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       Header Navigation
+       ========================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-container">
+      <a href="#home" class="brand-logo" aria-label="Home">
+        <div class="brand-icon-wrap">
+          <!-- Clean Medical Tooth Icon -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2C8.5 2 6 4.5 6 8c0 3 1.5 5.5 2.5 8.5C9.5 19.5 10 22 12 22s2.5-2.5 3.5-5.5C16.5 13.5 18 11 18 8c0-3.5-2.5-6-6-6z"/>
+            <path d="M9 10c1 2 2 3 3 3s2-1 3-3"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">[Dental Clinic Name]</span>
+          <span class="brand-tagline">Modern Family &amp; Aesthetic Care</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#about" class="nav-link">About Us</a></li>
+          <li><a href="#gallery" class="nav-link">Before &amp; After</a></li>
+          <li><a href="#team" class="nav-link">Our Doctors</a></li>
+          <li><a href="#pricing" class="nav-link">Insurance &amp; Pricing</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="tel:[Phone Number]" class="phone-quick-btn" title="Call our office">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>[+1 (555) 019-2834]</span>
+        </a>
+        <button class="btn btn-primary btn-sm open-booking-modal" id="headerBookBtn" data-service="General Checkup">
+          Book Appointment
+        </button>
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Open mobile menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       Mobile Navigation Drawer
+       ========================================================================== -->
+  <div class="mobile-nav-backdrop" id="mobileNavBackdrop"></div>
+  <aside class="mobile-nav-drawer" id="mobileNavDrawer" aria-label="Mobile Navigation Drawer">
+    <div class="mobile-drawer-header">
+      <div class="brand-text">
+        <span class="brand-name">[Dental Clinic Name]</span>
+        <span class="brand-tagline">Care Center</span>
+      </div>
+      <button class="modal-close-btn" id="closeMobileNav" aria-label="Close menu">&times;</button>
+    </div>
+
+    <ul class="mobile-nav-list">
+      <li class="mobile-nav-item"><a href="#services" class="mobile-nav-link"><span>Services</span> &rarr;</a></li>
+      <li class="mobile-nav-item"><a href="#about" class="mobile-nav-link"><span>About Practice</span> &rarr;</a></li>
+      <li class="mobile-nav-item"><a href="#gallery" class="mobile-nav-link"><span>Before &amp; After Smile Gallery</span> &rarr;</a></li>
+      <li class="mobile-nav-item"><a href="#team" class="mobile-nav-link"><span>Meet the Doctors</span> &rarr;</a></li>
+      <li class="mobile-nav-item"><a href="#pricing" class="mobile-nav-link"><span>Insurance &amp; Financing</span> &rarr;</a></li>
+      <li class="mobile-nav-item"><a href="#faq" class="mobile-nav-link"><span>Frequently Asked Questions</span> &rarr;</a></li>
+      <li class="mobile-nav-item"><a href="#contact" class="mobile-nav-link"><span>Office Hours &amp; Directions</span> &rarr;</a></li>
+    </ul>
+
+    <div class="mobile-nav-footer">
+      <div class="mobile-contact-pill">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span>[+1 (555) 019-2834]</span>
+      </div>
+      <div class="mobile-contact-pill">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <span>[123 Dental Way, Suite 200, City, State ZIP]</span>
+      </div>
+      <button class="btn btn-primary open-booking-modal" style="width: 100%; margin-top: 10px;">
+        Book Your Visit
+      </button>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       Hero Section
+       ========================================================================== -->
+  <section class="hero-section" id="home">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="section-label">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          Voted Top Dental Clinic in [City/Region]
+        </div>
+
+        <h1>Modern, Gentle Dentistry Designed Around You.</h1>
+
+        <p class="hero-subtitle">
+          Experience pain-free treatments in a calming, spa-inspired clinic. Dr. [Lead Dentist Name] and our team combine gentle care with low-radiation 3D imaging for healthy, lifelong smiles.
+        </p>
+
+        <div class="hero-perks">
+          <span class="perk-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            Same-Day Emergency Relief
+          </span>
+          <span class="perk-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            0% Interest Financing
+          </span>
+          <span class="perk-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            Gentle Sedation Options
+          </span>
+        </div>
+
+        <div class="hero-cta-group">
+          <button class="btn btn-primary btn-lg open-booking-modal" id="heroBookBtn">
+            Book Online Consultation
+          </button>
+          <a href="#services" class="btn btn-secondary btn-lg">
+            Explore Treatments &darr;
+          </a>
+        </div>
+
+        <div class="hero-trust-bar">
+          <div class="trust-avatars">
+            <img src="assets/images/patient_smile.jpg" alt="[Patient Name]" class="avatar-stack-item">
+            <img src="assets/images/dentist_female.jpg" alt="Dr. [Doctor Name]" class="avatar-stack-item">
+            <img src="assets/images/dentist_male.jpg" alt="Dr. [Doctor Name]" class="avatar-stack-item">
+          </div>
+          <div class="trust-stats">
+            <div class="rating-stars">
+              <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <span class="rating-text">4.9 / 5.0</span>
+            </div>
+            <span class="rating-subtext">Over 1,200+ Verified Patient Reviews</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-media-wrapper">
+        <div class="hero-image-card">
+          <img src="assets/images/clinic_interior.jpg" alt="Modern dental clinic treatment room at [Dental Clinic Name]">
+        </div>
+
+        <div class="floating-badge floating-badge-top">
+          <div class="badge-icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <div>
+            <div class="badge-title">Zero Waiting Room Anxiety</div>
+            <div class="badge-caption">Calming audio, warm blankets &amp; refreshments</div>
+          </div>
+        </div>
+
+        <div class="floating-badge floating-badge-bottom">
+          <div class="badge-icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div>
+            <div class="badge-title">All Major Insurance Accepted</div>
+            <div class="badge-caption">Plus flexible in-house membership savings</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Quick Consultation / Booking Form Strip
+       ========================================================================== -->
+  <div class="container quick-booking-strip">
+    <div class="quick-booking-card">
+      <form id="quickConsultForm" class="booking-form-grid">
+        <div class="form-group">
+          <label class="form-label" for="quickServiceSelect">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12h8"/><path d="M12 8v8"/></svg>
+            Select Treatment
+          </label>
+          <select id="quickServiceSelect" class="form-control">
+            <option value="General Checkup &amp; Clean">General Checkup &amp; Clean ($99 Special)</option>
+            <option value="Cosmetic &amp; Teeth Whitening">Cosmetic &amp; Teeth Whitening</option>
+            <option value="Dental Implants Consultation">Dental Implants Consultation</option>
+            <option value="Invisalign &amp; Clear Aligners">Invisalign &amp; Clear Aligners</option>
+            <option value="Emergency Toothache Relief">Emergency Toothache Relief (Same Day)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="quickDoctorSelect">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            Select Doctor
+          </label>
+          <select id="quickDoctorSelect" class="form-control">
+            <option value="Any Available Specialist">First Available Specialist</option>
+            <option value="Dr. [Lead Dentist Name], DDS">Dr. [Lead Dentist Name], DDS (General &amp; Cosmetic)</option>
+            <option value="Dr. [Orthodontist Name], DMD">Dr. [Orthodontist Name], DMD (Orthodontics)</option>
+            <option value="Dr. [Oral Surgeon Name], BDS">Dr. [Oral Surgeon Name], BDS (Implants &amp; Surgery)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="quickDateSelect">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            Preferred Date
+          </label>
+          <input type="date" id="quickDateSelect" class="form-control">
+        </div>
+
+        <div>
+          <button type="submit" class="btn btn-primary" style="width: 100%; height: 48px;">
+            Check Open Slots
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       Features & Why Choose Us Section
+       ========================================================================== -->
+  <section class="features-section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">A Better Patient Experience</span>
+        <h2>Why Families Trust [Dental Clinic Name]</h2>
+        <p>We’ve redesigned every step of the dental visit to be serene, comfortable, and completely transparent.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h4>Gentle &amp; Pain-Free</h4>
+          <p>We utilize the latest computer-controlled numbing tools, soothing weighted blankets, and optional mild sedation for total comfort.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+          </div>
+          <h4>Transparent Upfront Pricing</h4>
+          <p>No unexpected bills. We explain every treatment recommendation and review exact costs and insurance benefits prior to starting.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h4>Low-Dose 3D Diagnostics</h4>
+          <p>Our ultra-low radiation digital panoramic scanners capture high-definition 3D models in seconds without gooey impression trays.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 14 14"/></svg>
+          </div>
+          <h4>On-Time Appointments</h4>
+          <p>Your time is valuable. We pride ourselves on seating patients within 5 minutes of arrival, offering morning and evening slots.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Comprehensive Dental Services
+       ========================================================================== -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Comprehensive Care</span>
+        <h2>Personalized Dental Treatments</h2>
+        <p>From routine cleanings to smile makeovers, our multi-specialty clinic handles every aspect of your oral health under one roof.</p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="services-filter">
+        <button class="filter-btn active" data-filter="all">All Treatments</button>
+        <button class="filter-btn" data-filter="preventive">Preventive</button>
+        <button class="filter-btn" data-filter="cosmetic">Cosmetic</button>
+        <button class="filter-btn" data-filter="restorative">Restorative</button>
+        <button class="filter-btn" data-filter="orthodontics">Orthodontics</button>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service Card 1 -->
+        <div class="service-card" data-category="preventive">
+          <div class="service-card-top">
+            <span class="service-tag">Preventive</span>
+            <div class="service-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.5 2 6 4.5 6 8c0 3 1.5 5.5 2.5 8.5C9.5 19.5 10 22 12 22s2.5-2.5 3.5-5.5C16.5 13.5 18 11 18 8c0-3.5-2.5-6-6-6z"/></svg>
+            </div>
+          </div>
+          <h3>Checkup &amp; Ultrasonic Cleaning</h3>
+          <p>Gentle plaque removal, comprehensive oral cancer screening, low-radiation digital x-rays, and customized preventative hygiene plans.</p>
+          <ul class="service-features-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Ultrasonic tartar scaling</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Comprehensive gum health check</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Polishing &amp; fluoride coating</li>
+          </ul>
+          <div class="service-card-action">
+            <span class="service-price">From <strong>$99</strong> (Exam &amp; X-Ray)</span>
+            <button class="service-link open-booking-modal" data-service="Checkup &amp; Cleaning">Book Now &rarr;</button>
+          </div>
+        </div>
+
+        <!-- Service Card 2 -->
+        <div class="service-card" data-category="cosmetic">
+          <div class="service-card-top">
+            <span class="service-tag">Cosmetic</span>
+            <div class="service-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+          </div>
+          <h3>In-Office Teeth Whitening</h3>
+          <p>Brighten your smile up to 8 shades in a single relaxing 60-minute appointment using safe, enamel-strengthening LED technology.</p>
+          <ul class="service-features-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Immediate same-day visible results</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Zero-sensitivity protective gel</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Includes take-home maintenance kit</li>
+          </ul>
+          <div class="service-card-action">
+            <span class="service-price">From <strong>$299</strong></span>
+            <button class="service-link open-booking-modal" data-service="Teeth Whitening">Book Now &rarr;</button>
+          </div>
+        </div>
+
+        <!-- Service Card 3 -->
+        <div class="service-card" data-category="restorative">
+          <div class="service-card-top">
+            <span class="service-tag">Restorative</span>
+            <div class="service-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+          </div>
+          <h3>Permanent Dental Implants</h3>
+          <p>The gold standard for replacing missing teeth. Natural-looking biocompatible titanium roots paired with custom porcelain crowns.</p>
+          <ul class="service-features-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> 3D CBCT guided surgical placement</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Looks, feels &amp; functions like natural teeth</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Lifetime structural longevity</li>
+          </ul>
+          <div class="service-card-action">
+            <span class="service-price">Consultation <strong>$0</strong></span>
+            <button class="service-link open-booking-modal" data-service="Dental Implants">Book Now &rarr;</button>
+          </div>
+        </div>
+
+        <!-- Service Card 4 -->
+        <div class="service-card" data-category="orthodontics">
+          <div class="service-card-top">
+            <span class="service-tag">Orthodontics</span>
+            <div class="service-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12a4 4 0 0 0 8 0"/></svg>
+            </div>
+          </div>
+          <h3>Invisalign Clear Aligners</h3>
+          <p>Discreetly straighten crooked or crowded teeth and fix bite alignments with removable, virtually invisible custom trays.</p>
+          <ul class="service-features-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Digital 3D outcome preview</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> No wires, brackets or dietary limits</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Monthly payment plans available</li>
+          </ul>
+          <div class="service-card-action">
+            <span class="service-price">From <strong>$89/mo</strong></span>
+            <button class="service-link open-booking-modal" data-service="Invisalign Aligners">Book Now &rarr;</button>
+          </div>
+        </div>
+
+        <!-- Service Card 5 -->
+        <div class="service-card" data-category="cosmetic">
+          <div class="service-card-top">
+            <span class="service-tag">Cosmetic</span>
+            <div class="service-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
+          </div>
+          <h3>Custom Porcelain Veneers</h3>
+          <p>Transform chipped, worn, or unevenly spaced teeth with ultra-durable, natural-looking porcelain shells crafted for your smile.</p>
+          <ul class="service-features-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Handcrafted for natural translucency</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Stain-resistant ceramic material</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Minimal tooth enamel preparation</li>
+          </ul>
+          <div class="service-card-action">
+            <span class="service-price">Consultation <strong>Available</strong></span>
+            <button class="service-link open-booking-modal" data-service="Porcelain Veneers">Book Now &rarr;</button>
+          </div>
+        </div>
+
+        <!-- Service Card 6 -->
+        <div class="service-card" data-category="restorative">
+          <div class="service-card-top">
+            <span class="service-tag">Emergency</span>
+            <div class="service-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            </div>
+          </div>
+          <h3>Same-Day Emergency Dental Care</h3>
+          <p>Immediate pain relief for broken teeth, severe toothaches, infections, and knocked-out teeth with priority same-day scheduling.</p>
+          <ul class="service-features-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Immediate pain diagnosis</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Same-day tooth repair or extraction</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Gentle root canal therapy</li>
+          </ul>
+          <div class="service-card-action">
+            <span class="service-price">Priority <strong>Same-Day</strong></span>
+            <button class="service-link open-booking-modal" data-service="Emergency Care">Book Relief &rarr;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Interactive Before & After Smile Gallery
+       ========================================================================== -->
+  <section class="gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Real Transformations</span>
+        <h2>Smile Transformation Gallery</h2>
+        <p>Drag the slider horizontally to view the before and after results delivered by Dr. [Lead Dentist Name] and our clinical team.</p>
+      </div>
+
+      <div class="before-after-container">
+        <!-- Interactive Split Slider Box -->
+        <div class="ba-slider-box" id="baBox">
+          <!-- Background: Before Image -->
+          <img src="assets/images/patient_smile.jpg" alt="Before dental treatment" class="ba-image" id="baBeforeImg" style="filter: sepia(40%) contrast(90%) brightness(88%);">
+          <span class="ba-tag ba-tag-before">Before</span>
+
+          <!-- Overlay: After Image -->
+          <div class="ba-after-layer" id="baAfterLayer">
+            <img src="assets/images/patient_smile.jpg" alt="After dental treatment" id="baAfterImg" style="filter: brightness(108%) contrast(102%);">
+            <span class="ba-tag ba-tag-after">After</span>
+          </div>
+
+          <!-- Draggable Handle Indicator -->
+          <div class="ba-slider-handle" id="baHandle">
+            <div class="handle-circle">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="8 15 3 12 8 9"/><polyline points="16 9 21 12 16 15"/></svg>
+            </div>
+          </div>
+
+          <!-- HTML Range Input for accessibility & mobile touch swipe -->
+          <input type="range" min="0" max="100" value="50" class="ba-range-input" id="baRange" aria-label="Before and after comparison slider">
+        </div>
+
+        <!-- Case Explanation & Switcher -->
+        <div class="gallery-case-info">
+          <div class="section-label" style="margin-bottom: 8px;">Case Study</div>
+          <h3 id="baCaseTitle">Professional In-Office Teeth Whitening</h3>
+          <p id="baCaseDesc" style="color: var(--color-slate-600); margin: 14px 0 24px 0; font-size: 1.05rem;">
+            Achieved 7 shades brighter in a single 60-minute pain-free session supervised by Dr. [Lead Dentist Name].
+          </p>
+
+          <h5 style="margin-bottom: 10px; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-slate-500);">
+            Select Treatment Showcase:
+          </h5>
+          <div class="gallery-tabs">
+            <button class="gallery-tab-btn active" data-case="whitening">Teeth Whitening</button>
+            <button class="gallery-tab-btn" data-case="veneers">Porcelain Veneers</button>
+            <button class="gallery-tab-btn" data-case="aligners">Clear Aligners</button>
+          </div>
+
+          <div style="margin-top: 32px; padding: 20px; background: var(--color-slate-50); border-radius: var(--radius-md); border: 1px solid var(--border-light);">
+            <div style="font-weight: 700; color: var(--color-slate-900); font-size: 0.95rem; margin-bottom: 6px;">
+              Ready for your custom smile preview?
+            </div>
+            <div style="font-size: 0.875rem; color: var(--color-slate-600); margin-bottom: 14px;">
+              Schedule a 3D digital simulation at [Dental Clinic Name] to see your potential results before committing.
+            </div>
+            <button class="btn btn-outline btn-sm open-booking-modal" data-service="Smile Consultation">
+              Book Free Smile Assessment
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Meet Our Doctors & Specialists (All Placeholders)
+       ========================================================================== -->
+  <section class="team-section" id="team">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Our Experienced Team</span>
+        <h2>Meet Our Dental Specialists</h2>
+        <p>Our multidisciplinary clinicians combine gentle bedside manners with advanced training from premier dental institutions.</p>
+      </div>
+
+      <div class="team-grid">
+        <!-- Doctor 1: Lead Dentist -->
+        <div class="team-card">
+          <div class="team-photo-wrap">
+            <img src="assets/images/dentist_female.jpg" alt="Dr. [Lead Dentist Name], DDS">
+            <span class="team-specialty-badge">Founder &amp; Clinical Lead</span>
+          </div>
+          <div class="team-info">
+            <h4 class="team-name">Dr. [Lead Dentist Name]</h4>
+            <span class="team-creds">DDS, FAGD • 15+ Years Practice</span>
+            <p class="team-bio">
+              Specializes in minimally invasive cosmetic enhancements and full-mouth rehabilitation with a passion for anxious patient care.
+            </p>
+            <div class="team-meta">
+              <span>[Dental School Name]</span>
+              <button class="open-booking-modal" data-service="Consultation with Dr. [Lead Dentist Name]" style="color: var(--color-teal-700); font-weight: 700;">Book &rarr;</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Doctor 2: Specialist -->
+        <div class="team-card">
+          <div class="team-photo-wrap">
+            <img src="assets/images/dentist_male.jpg" alt="Dr. [Orthodontist Name], DMD">
+            <span class="team-specialty-badge">Orthodontics &amp; Aligners</span>
+          </div>
+          <div class="team-info">
+            <h4 class="team-name">Dr. [Orthodontist Name]</h4>
+            <span class="team-creds">DMD, MS • Board Certified</span>
+            <p class="team-bio">
+              Specialized expertise in discreet clear aligner therapy, bite correction, and early interceptive treatment for children and teens.
+            </p>
+            <div class="team-meta">
+              <span>[University Name]</span>
+              <button class="open-booking-modal" data-service="Consultation with Dr. [Orthodontist Name]" style="color: var(--color-teal-700); font-weight: 700;">Book &rarr;</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Doctor 3: Oral Surgeon / Periodontist -->
+        <div class="team-card">
+          <div class="team-photo-wrap">
+            <img src="assets/images/dentist_female.jpg" alt="Dr. [Oral Surgeon Name], BDS" style="filter: hue-rotate(15deg);">
+            <span class="team-specialty-badge">Implants &amp; Periodontics</span>
+          </div>
+          <div class="team-info">
+            <h4 class="team-name">Dr. [Oral Surgeon Name]</h4>
+            <span class="team-creds">BDS, MS • Fellow of ICOI</span>
+            <p class="team-bio">
+              Expertise in 3D computer-guided dental implants, bone regeneration, and gentle surgical gum rejuvenation techniques.
+            </p>
+            <div class="team-meta">
+              <span>[Institute Name]</span>
+              <button class="open-booking-modal" data-service="Consultation with Dr. [Oral Surgeon Name]" style="color: var(--color-teal-700); font-weight: 700;">Book &rarr;</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Doctor 4: Pediatric Dentist -->
+        <div class="team-card">
+          <div class="team-photo-wrap">
+            <img src="assets/images/dentist_male.jpg" alt="Dr. [Pediatric Dentist Name], DDS" style="filter: sepia(10%);">
+            <span class="team-specialty-badge">Pediatric Care Specialist</span>
+          </div>
+          <div class="team-info">
+            <h4 class="team-name">Dr. [Pediatric Dentist Name]</h4>
+            <span class="team-creds">DDS, MS • Pediatric Dentistry</span>
+            <p class="team-bio">
+              Dedicated to making early dentist visits joyful and educational, creating positive dental habits that last a lifetime.
+            </p>
+            <div class="team-meta">
+              <span>[Dental School Name]</span>
+              <button class="open-booking-modal" data-service="Consultation with Dr. [Pediatric Dentist Name]" style="color: var(--color-teal-700); font-weight: 700;">Book &rarr;</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Technology & Comfort Spotlight
+       ========================================================================== -->
+  <section class="tech-section">
+    <div class="container tech-grid">
+      <div class="tech-content">
+        <span class="section-label" style="background: rgba(13, 148, 136, 0.2); border-color: rgba(13, 148, 136, 0.4); color: var(--color-teal-200);">
+          Advanced Digital Dentistry
+        </span>
+        <h2>No Messy Impression Goop. Fast, High-Precision Care.</h2>
+        <p>
+          At [Dental Clinic Name], we invest in cutting-edge diagnostics to make your treatments quicker, gentler, and far more accurate than traditional methods.
+        </p>
+
+        <div class="tech-list">
+          <div class="tech-item">
+            <div class="tech-item-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <div class="tech-item-text">
+              <h4>3D Intraoral Digital Scans</h4>
+              <p>Generates an exact 3D digital model of your teeth in under 90 seconds without gagging or silicone molds.</p>
+            </div>
+          </div>
+
+          <div class="tech-item">
+            <div class="tech-item-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div class="tech-item-text">
+              <h4>Ultra-Low Dose Cone Beam CT</h4>
+              <p>90% less radiation than standard dental x-rays, delivering crisp 3D visualization for precision implant placement.</p>
+            </div>
+          </div>
+
+          <div class="tech-item">
+            <div class="tech-item-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+            </div>
+            <div class="tech-item-text">
+              <h4>Spa-Like Comfort Amenities</h4>
+              <p>Noise-canceling headphones with streaming movies, ergonomic memory-foam dental chairs, and warm post-treatment towels.</p>
+            </div>
+          </div>
+        </div>
+
+        <button class="btn btn-primary open-booking-modal" data-service="High-Tech Consultation">
+          Tour Our Clinic &amp; Meet the Team
+        </button>
+      </div>
+
+      <div class="tech-image-wrap">
+        <img src="assets/images/dental_tech.jpg" alt="Doctor demonstrating 3D dental scan at [Dental Clinic Name]">
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Transparent Pricing & Interactive Calculator
+       ========================================================================== -->
+  <section class="pricing-section" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Clear &amp; Honest Numbers</span>
+        <h2>Transparent Pricing &amp; Insurance Estimator</h2>
+        <p>No surprise bills or confusing medical codes. Use our calculator to check estimated out-of-pocket costs with your coverage tier.</p>
+      </div>
+
+      <div class="pricing-calculator-card">
+        <div class="calc-grid">
+          <div>
+            <h3 style="font-size: 1.25rem; margin-bottom: 8px;">Estimate Your Treatment Out-Of-Pocket</h3>
+            <p style="font-size: 0.9rem; color: var(--color-slate-600); margin-bottom: 20px;">
+              Select your procedure and coverage to calculate estimated copays.
+            </p>
+
+            <div style="display: grid; grid-template-columns: 1fr; gap: 16px;">
+              <div class="form-group">
+                <label class="form-label" for="calcTreatment">Select Procedure</label>
+                <select id="calcTreatment" class="form-control">
+                  <option value="cleaning">Routine Exam &amp; Hygiene Cleaning ($180 value)</option>
+                  <option value="whitening">Professional Laser Teeth Whitening ($350 value)</option>
+                  <option value="filling">Tooth-Colored Composite Filling ($220 value)</option>
+                  <option value="crown">Custom Ceramic Dental Crown ($980 value)</option>
+                  <option value="implant">Single Dental Implant with Abutment ($2,400 value)</option>
+                  <option value="aligners">Full Invisalign Clear Aligner Therapy ($3,600 value)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="calcInsurance">Your Insurance or Membership Tier</label>
+                <select id="calcInsurance" class="form-control">
+                  <option value="standard50">Standard PPO Insurance (Estimated 50% Coverage)</option>
+                  <option value="premier80">Premier Preventive Insurance (Estimated 80% Coverage)</option>
+                  <option value="inhouse">[Dental Clinic Name] Membership Plan (25% Member Savings)</option>
+                  <option value="none">No Insurance / Self-Pay</option>
+                </select>
+              </div>
+            </div>
+
+            <div style="margin-top: 20px;">
+              <span style="font-size: 0.8rem; font-weight: 700; color: var(--color-slate-700); text-transform: uppercase;">
+                Accepted PPO Insurance Providers:
+              </span>
+              <div class="insurance-badges">
+                <span class="insurance-badge">Delta Dental</span>
+                <span class="insurance-badge">Cigna</span>
+                <span class="insurance-badge">MetLife</span>
+                <span class="insurance-badge">Aetna</span>
+                <span class="insurance-badge">Guardian</span>
+                <span class="insurance-badge">Humana</span>
+                <span class="insurance-badge">CareCredit</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="calc-result-box">
+            <span style="font-size: 0.85rem; font-weight: 700; color: var(--color-slate-500); text-transform: uppercase; letter-spacing: 0.05em;">
+              Estimated Patient Responsibility
+            </span>
+            <div class="calc-result-number" id="calcEstimatedTotal">$90</div>
+            <div id="calcMonthlyTotal" style="font-size: 0.85rem; color: var(--color-teal-700); font-weight: 600; margin-bottom: 16px;">
+              Or as low as $8/month with 0% APR financing
+            </div>
+            <p style="font-size: 0.775rem; color: var(--color-slate-500); margin-bottom: 16px;">
+              *Estimates are for planning purposes. We verify your exact benefits in real-time before treatment starts.
+            </p>
+            <button class="btn btn-primary open-booking-modal" style="width: 100%;" data-service="Insurance Verification">
+              Verify My Coverage Free
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Patient Testimonials (Placeholders)
+       ========================================================================== -->
+  <section class="testimonials-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Patient Stories</span>
+        <h2>What Our Patients Say</h2>
+        <p>Real feedback from patients who found gentle, reliable care at [Dental Clinic Name].</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <!-- Review 1 -->
+        <div class="testimonial-card">
+          <div>
+            <div class="testimonial-stars">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            </div>
+            <p class="testimonial-text">
+              "I had severe dental anxiety after a bad experience elsewhere. Dr. [Lead Dentist Name] was so calm, reassuring, and completely gentle. I felt zero pain throughout my entire crown procedure. The team here is extraordinary!"
+            </p>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">[P1]</div>
+            <div class="author-details">
+              <span class="author-name">[Patient Name 1]</span>
+              <span class="author-treatment">Porcelain Crown &amp; Cleaning • Verified Patient</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="testimonial-card">
+          <div>
+            <div class="testimonial-stars">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            </div>
+            <p class="testimonial-text">
+              "Completed my clear aligner treatment in just 7 months with Dr. [Orthodontist Name]. The digital 3D scans were so cool to see, and my teeth look straight and natural without any brackets. Couldn't be happier!"
+            </p>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">[P2]</div>
+            <div class="author-details">
+              <span class="author-name">[Patient Name 2]</span>
+              <span class="author-treatment">Invisalign Clear Aligners • Verified Patient</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="testimonial-card">
+          <div>
+            <div class="testimonial-stars">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            </div>
+            <p class="testimonial-text">
+              "Had a cracked molar on a Saturday morning. [Dental Clinic Name] squeezed me into the emergency schedule within two hours and resolved the pain immediately. The front office staff handled my insurance flawlessly."
+            </p>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">[P3]</div>
+            <div class="author-details">
+              <span class="author-name">[Patient Name 3]</span>
+              <span class="author-treatment">Emergency Dental Care • Verified Patient</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Frequently Asked Questions
+       ========================================================================== -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Got Questions?</span>
+        <h2>Frequently Asked Questions</h2>
+        <p>Everything you need to know about your visits, insurance, and treatment comfort at [Dental Clinic Name].</p>
+      </div>
+
+      <div class="faq-accordion">
+        <!-- FAQ 1 -->
+        <div class="faq-item active">
+          <button class="faq-question-btn" aria-expanded="true">
+            <span>What can I expect at my first visit?</span>
+            <div class="faq-icon">&darr;</div>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Your first visit includes a warm welcome at reception, digital 3D scans or low-radiation x-rays, a gentle examination by Dr. [Lead Dentist Name], and a consultation discussing your oral goals. We provide a transparent breakdown of any recommended care before taking any next steps.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item">
+          <button class="faq-question-btn" aria-expanded="false">
+            <span>Do your treatments really feel pain-free?</span>
+            <div class="faq-icon">&darr;</div>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Yes! We prioritize patient comfort above all else. We use computer-aided local anesthesia for painless numbing, topical gels, and optional mild nitrous oxide sedation. Many of our patients watch streaming shows with noise-canceling headphones and don’t feel a thing.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item">
+          <button class="faq-question-btn" aria-expanded="false">
+            <span>What if I don't have dental insurance?</span>
+            <div class="faq-icon">&darr;</div>
+          </button>
+          <div class="faq-answer">
+            <p>
+              No insurance? No problem! We offer the [Dental Clinic Name] In-House Membership Plan. For an affordable annual fee, members receive two cleanings, annual x-rays, unlimited free exams, and 20% to 25% off all cosmetic and restorative procedures with no waiting periods or annual maximums.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item">
+          <button class="faq-question-btn" aria-expanded="false">
+            <span>How do you handle emergency appointments?</span>
+            <div class="faq-icon">&darr;</div>
+          </button>
+          <div class="faq-answer">
+            <p>
+              We reserve emergency appointment blocks every single day for broken teeth, unbearable toothache pain, swollen gums, or lost crowns. Please call our direct line at [+1 (555) 019-2834] for immediate priority triage and same-day relief.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="faq-item">
+          <button class="faq-question-btn" aria-expanded="false">
+            <span>How long do dental implants last?</span>
+            <div class="faq-icon">&darr;</div>
+          </button>
+          <div class="faq-answer">
+            <p>
+              When placed with 3D guided precision and maintained with routine brushing and dental checkups, titanium dental implants can last a lifetime! They bond directly with the jawbone, preventing the bone shrinkage typically associated with traditional bridges or dentures.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Location, Hours & Appointment Request Section
+       ========================================================================== -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Clinic Information & Hours -->
+        <div class="contact-info-card">
+          <span class="section-label">Visit Our Clinic</span>
+          <h2 style="font-size: 1.8rem; margin: 10px 0 16px 0;">We’d Love to Welcome You</h2>
+          <p style="color: var(--color-slate-600); margin-bottom: 24px;">
+            Conveniently located with complimentary patient parking and accessible ramp entry.
+          </p>
+
+          <div class="info-item">
+            <div class="info-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div class="info-details">
+              <h4>Office Address</h4>
+              <p>[123 Dental Way, Suite 200, City, State ZIP]</p>
+              <p style="font-size: 0.8rem; color: var(--color-slate-500); margin-top: 2px;">(Near [Landmark / Central Plaza])</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div class="info-details">
+              <h4>Phone &amp; Emergency Line</h4>
+              <p><a href="tel:[Phone Number]" style="font-weight: 700; color: var(--color-teal-800);">[+1 (555) 019-2834]</a></p>
+              <p style="font-size: 0.8rem; color: var(--color-slate-500);">Email: [contact@clinicdomain.com]</p>
+            </div>
+          </div>
+
+          <div style="margin-top: 20px;">
+            <h4 style="font-size: 1rem; color: var(--color-slate-900); margin-bottom: 8px;">Clinic Operating Hours</h4>
+            <table class="hours-table">
+              <tbody>
+                <tr>
+                  <td>Monday – Thursday</td>
+                  <td>8:00 AM – 6:00 PM</td>
+                </tr>
+                <tr>
+                  <td>Friday</td>
+                  <td>8:00 AM – 4:00 PM</td>
+                </tr>
+                <tr>
+                  <td>Saturday</td>
+                  <td>9:00 AM – 2:00 PM (By Appt)</td>
+                </tr>
+                <tr>
+                  <td>Sunday &amp; Emergencies</td>
+                  <td><span style="color: #be123c; font-weight: 700;">On-Call Doctor Available</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Direct Consultation Form -->
+        <div class="contact-form-card">
+          <h3 style="font-size: 1.35rem; margin-bottom: 6px;">Request a Callback or Consultation</h3>
+          <p style="font-size: 0.9rem; color: var(--color-slate-600); margin-bottom: 20px;">
+            Fill out your details below and our patient concierge team will contact you within 2 business hours.
+          </p>
+
+          <form id="contactClinicForm" class="contact-form">
+            <div class="form-group">
+              <label class="form-label" for="contactPatientName">Your Full Name</label>
+              <input type="text" id="contactPatientName" class="form-control" placeholder="[Patient Full Name]" required>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+              <div class="form-group">
+                <label class="form-label" for="contactPhone">Phone Number</label>
+                <input type="tel" id="contactPhone" class="form-control" placeholder="[+1 (555) ...]" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="contactEmail">Email Address</label>
+                <input type="email" id="contactEmail" class="form-control" placeholder="[patient@email.com]">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contactReason">Reason for Visit</label>
+              <select id="contactReason" class="form-control">
+                <option value="Checkup">Routine Cleaning &amp; Checkup</option>
+                <option value="Cosmetic">Cosmetic Dentistry / Whitening</option>
+                <option value="Implants">Dental Implants Consultation</option>
+                <option value="Emergency">Urgent Dental Pain / Broken Tooth</option>
+                <option value="Question">General Inquiry / Insurance Question</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contactMessage">Notes or Concerns (Optional)</label>
+              <textarea id="contactMessage" class="form-control" rows="3" placeholder="Tell us about any specific dental anxiety or questions..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%; margin-top: 6px;">
+              Submit Consultation Request
+            </button>
+
+            <div id="contactSuccessNotice" style="display: none; padding: 12px; background: var(--color-teal-50); border: 1px solid var(--color-teal-200); border-radius: var(--radius-sm); color: var(--color-teal-900); font-size: 0.875rem; text-align: center; margin-top: 10px;">
+              &check; Thank you! We received your request and will reach out shortly.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Footer
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="brand-logo" style="margin-bottom: 14px;">
+            <div class="brand-icon-wrap" style="background: var(--color-teal-800);">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22">
+                <path d="M12 2C8.5 2 6 4.5 6 8c0 3 1.5 5.5 2.5 8.5C9.5 19.5 10 22 12 22s2.5-2.5 3.5-5.5C16.5 13.5 18 11 18 8c0-3.5-2.5-6-6-6z"/>
+              </svg>
+            </div>
+            <span class="brand-name" style="color: #ffffff;">[Dental Clinic Name]</span>
+          </div>
+          <p style="font-size: 0.875rem; line-height: 1.6; color: var(--color-slate-400); margin-bottom: 18px; max-width: 320px;">
+            Delivering modern, compassionate dental healthcare with state-of-the-art 3D imaging, gentle techniques, and comfortable care for the entire family.
+          </p>
+          <div style="font-size: 0.8rem; color: var(--color-slate-400);">
+            Lead Clinician: <strong>Dr. [Lead Dentist Name], DDS, FAGD</strong>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Clinical Services</h4>
+          <ul class="footer-links">
+            <li><a href="#services">Preventive Checkups</a></li>
+            <li><a href="#services">Teeth Whitening</a></li>
+            <li><a href="#services">Dental Implants</a></li>
+            <li><a href="#services">Clear Aligners</a></li>
+            <li><a href="#services">Porcelain Veneers</a></li>
+            <li><a href="#services">Emergency Care</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Patient Resources</h4>
+          <ul class="footer-links">
+            <li><a href="#pricing">Accepted Insurance</a></li>
+            <li><a href="#pricing">In-House Savings Plan</a></li>
+            <li><a href="#gallery">Before &amp; After Smile Gallery</a></li>
+            <li><a href="#faq">Patient FAQ</a></li>
+            <li><a href="#team">Our Doctors</a></li>
+            <li><a href="#" class="open-booking-modal">Online Appointment</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Office Contact</h4>
+          <div style="display: flex; flex-direction: column; gap: 8px; font-size: 0.875rem; color: var(--color-slate-400);">
+            <p><strong>[Dental Clinic Name]</strong></p>
+            <p>[123 Dental Way, Suite 200]</p>
+            <p>[City, State ZIP Code]</p>
+            <p>Phone: <a href="tel:[Phone Number]" style="color: var(--color-teal-200);">[+1 (555) 019-2834]</a></p>
+            <p>Email: [appointments@clinicdomain.com]</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 [Dental Clinic Name]. All Rights Reserved. Professional Family &amp; Cosmetic Dentistry.
+        </div>
+        <div style="display: flex; gap: 16px;">
+          <a href="#" style="color: var(--color-slate-400); font-size: 0.8rem;">Privacy Policy</a>
+          <a href="#" style="color: var(--color-slate-400); font-size: 0.8rem;">Terms of Service</a>
+          <a href="#" style="color: var(--color-slate-400); font-size: 0.8rem;">HIPAA Compliance</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       Mobile Sticky Quick Action Bottom Bar
+       ========================================================================== -->
+  <aside class="mobile-sticky-bar" aria-label="Mobile Quick Actions">
+    <a href="tel:[Phone Number]" class="btn btn-outline" style="border-color: var(--border-medium); font-weight: 700;">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      Call Office
+    </a>
+    <button class="btn btn-primary open-booking-modal" data-service="General Visit">
+      Book Online
+    </button>
+  </aside>
+
+  <!-- ==========================================================================
+       Interactive Multi-Step Appointment Booking Modal
+       ========================================================================== -->
+  <div class="modal-backdrop" id="bookingModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div>
+          <h3 id="modalTitle">Schedule Your Dental Appointment</h3>
+          <p style="font-size: 0.8rem; color: var(--color-slate-500); margin: 0;">Instant confirmation • No pre-payment required</p>
+        </div>
+        <button class="modal-close-btn close-booking-modal" aria-label="Close dialog">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <!-- Progress Indicator -->
+        <div class="wizard-steps-indicator">
+          <div class="wizard-step-node active" id="node1">
+            <div class="node-num">1</div>
+            <span class="node-title">Service</span>
+          </div>
+          <div class="wizard-step-node" id="node2">
+            <div class="node-num">2</div>
+            <span class="node-title">Time &amp; Doctor</span>
+          </div>
+          <div class="wizard-step-node" id="node3">
+            <div class="node-num">3</div>
+            <span class="node-title">Patient Info</span>
+          </div>
+          <div class="wizard-step-node" id="node4">
+            <div class="node-num">4</div>
+            <span class="node-title">Confirm</span>
+          </div>
+        </div>
+
+        <!-- Step 1: Select Service -->
+        <div class="wizard-step active" id="step1">
+          <h4 style="font-size: 1rem; margin-bottom: 12px; color: var(--color-slate-900);">Select Your Treatment Goal:</h4>
+          <div class="option-select-grid">
+            <div class="select-card selected" data-group="service" data-value="General Checkup &amp; Clean">
+              <div>
+                <strong>Routine Checkup &amp; Clean</strong>
+                <div style="font-size: 0.775rem; color: var(--color-slate-500);">$99 New Patient Special</div>
+              </div>
+            </div>
+
+            <div class="select-card" data-group="service" data-value="Cosmetic &amp; Teeth Whitening">
+              <div>
+                <strong>Teeth Whitening</strong>
+                <div style="font-size: 0.775rem; color: var(--color-slate-500);">1-Hour In-Office Session</div>
+              </div>
+            </div>
+
+            <div class="select-card" data-group="service" data-value="Dental Implants Consultation">
+              <div>
+                <strong>Dental Implants</strong>
+                <div style="font-size: 0.775rem; color: var(--color-slate-500);">Tooth Replacement &amp; 3D Scan</div>
+              </div>
+            </div>
+
+            <div class="select-card" data-group="service" data-value="Invisalign &amp; Clear Aligners">
+              <div>
+                <strong>Clear Aligners</strong>
+                <div style="font-size: 0.775rem; color: var(--color-slate-500);">Orthodontic Assessment</div>
+              </div>
+            </div>
+
+            <div class="select-card" data-group="service" data-value="Emergency Toothache Relief">
+              <div>
+                <strong style="color: #be123c;">Emergency Pain Relief</strong>
+                <div style="font-size: 0.775rem; color: var(--color-slate-500);">Priority Same-Day Attention</div>
+              </div>
+            </div>
+
+            <div class="select-card" data-group="service" data-value="Pediatric Dentistry">
+              <div>
+                <strong>Pediatric Exam</strong>
+                <div style="font-size: 0.775rem; color: var(--color-slate-500);">Child Friendly Gentle Care</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 2: Doctor & Date/Time -->
+        <div class="wizard-step" id="step2">
+          <h4 style="font-size: 1rem; margin-bottom: 12px; color: var(--color-slate-900);">Select Preferred Doctor &amp; Schedule:</h4>
+
+          <div class="form-group" style="margin-bottom: 14px;">
+            <label class="form-label" for="wizardDoctorSelect">Doctor / Specialist</label>
+            <select id="wizardDoctorSelect" class="form-control" onchange="bookingState.doctor = this.value">
+              <option value="Dr. [Lead Dentist Name], DDS">Dr. [Lead Dentist Name], DDS (General &amp; Cosmetic)</option>
+              <option value="Dr. [Orthodontist Name], DMD">Dr. [Orthodontist Name], DMD (Orthodontics &amp; Aligners)</option>
+              <option value="Dr. [Oral Surgeon Name], BDS">Dr. [Oral Surgeon Name], BDS (Implants &amp; Surgery)</option>
+              <option value="Dr. [Pediatric Dentist Name], DDS">Dr. [Pediatric Dentist Name], DDS (Pediatric Care)</option>
+            </select>
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 14px;">
+            <div class="form-group">
+              <label class="form-label" for="appointmentDateInput">Date</label>
+              <input type="date" id="appointmentDateInput" class="form-control">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Available Slots</label>
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+                <button type="button" class="btn btn-outline btn-sm select-card selected" data-group="time" data-value="9:30 AM" style="padding: 8px 6px;">9:30 AM</button>
+                <button type="button" class="btn btn-outline btn-sm select-card" data-group="time" data-value="11:15 AM" style="padding: 8px 6px;">11:15 AM</button>
+                <button type="button" class="btn btn-outline btn-sm select-card" data-group="time" data-value="2:00 PM" style="padding: 8px 6px;">2:00 PM</button>
+                <button type="button" class="btn btn-outline btn-sm select-card" data-group="time" data-value="4:30 PM" style="padding: 8px 6px;">4:30 PM</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 3: Patient Information -->
+        <div class="wizard-step" id="step3">
+          <h4 style="font-size: 1rem; margin-bottom: 12px; color: var(--color-slate-900);">Patient Contact Details:</h4>
+          <div style="display: flex; flex-direction: column; gap: 12px;">
+            <div class="form-group">
+              <label class="form-label" for="wizardPatientName">Patient Full Name *</label>
+              <input type="text" id="wizardPatientName" class="form-control" placeholder="[First Name] [Last Name]" required>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+              <div class="form-group">
+                <label class="form-label" for="wizardPatientPhone">Phone Number *</label>
+                <input type="tel" id="wizardPatientPhone" class="form-control" placeholder="[+1 (555) 000-0000]" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="wizardPatientEmail">Email Address</label>
+                <input type="email" id="wizardPatientEmail" class="form-control" placeholder="[email@domain.com]">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="wizardInsuranceNotes">Dental Insurance or Special Notes (Optional)</label>
+              <input type="text" id="wizardInsuranceNotes" class="form-control" placeholder="e.g. Delta Dental PPO, or anxious about needles">
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 4: Confirmation Screen -->
+        <div class="wizard-step" id="step4">
+          <div class="confirmation-card">
+            <div class="success-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <h3 style="font-size: 1.35rem; color: var(--color-slate-900);">Appointment Successfully Reserved!</h3>
+            <p style="font-size: 0.875rem; color: var(--color-slate-600); margin-top: 4px;">
+              Confirmation code: <strong style="color: var(--color-teal-800);">#DEN-83921</strong>
+            </p>
+
+            <div class="booking-summary-box">
+              <div class="booking-summary-row">
+                <span style="color: var(--color-slate-500);">Clinic:</span>
+                <strong>[Dental Clinic Name]</strong>
+              </div>
+              <div class="booking-summary-row">
+                <span style="color: var(--color-slate-500);">Service:</span>
+                <strong id="summaryService">General Checkup &amp; Clean</strong>
+              </div>
+              <div class="booking-summary-row">
+                <span style="color: var(--color-slate-500);">Doctor:</span>
+                <strong id="summaryDoctor">Dr. [Lead Dentist Name], DDS</strong>
+              </div>
+              <div class="booking-summary-row">
+                <span style="color: var(--color-slate-500);">When:</span>
+                <strong id="summaryDateTime">Tomorrow at 10:00 AM</strong>
+              </div>
+              <div class="booking-summary-row">
+                <span style="color: var(--color-slate-500);">Patient:</span>
+                <strong id="summaryPatient">[Patient Full Name]</strong>
+              </div>
+              <div class="booking-summary-row">
+                <span style="color: var(--color-slate-500);">Location:</span>
+                <span>[123 Dental Way, Suite 200]</span>
+              </div>
+            </div>
+
+            <p style="font-size: 0.8rem; color: var(--color-slate-500);">
+              An SMS and email reminder will be sent 24 hours prior. Free cancellation up to 2 hours before your visit.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary btn-sm" id="wizardPrevBtn" style="display: none;">
+          &larr; Back
+        </button>
+        <div style="margin-left: auto;">
+          <button type="button" class="btn btn-primary" id="wizardNextBtn">
+            Continue
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main JavaScript Logic -->
+  <script src="js/app.js"></script>
+</body>
+</html>
