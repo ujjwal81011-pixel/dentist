@@ -19,20 +19,21 @@ A responsive, elegant, and calming dental healthcare website built with modern H
 │   └── styles.css      # Custom styling, typography & media queries
 ├── js/
 │   └── app.js          # Interactive UI logic & state management
-├── assets/
-│   └── images/         # High-resolution clinic, doctor, and patient photography
-└── vercel.json         # Vercel deployment configuration
+└── assets/
+    └── images/         # High-resolution clinic, doctor, and patient photography
 ```
 
-## Deployment
+## Running Locally
 
-### 1-Click Deploy to Vercel
+To run the site locally on any machine:
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fujjwal81011-pixel%2Fdentist)
-
-Click the button above or follow these simple steps to deploy:
-1. Log in to [Vercel](https://vercel.com).
-2. Go to [https://vercel.com/new](https://vercel.com/new).
-3. Under **Import Git Repository**, select **`ujjwal81011-pixel/dentist`**.
-4. Click **Deploy**. Vercel will automatically build and publish your website to a live `*.vercel.app` URL with continuous updates whenever you push changes!
+1. Clone or download the repository:
+   ```bash
+   git clone https://github.com/ujjwal81011-pixel/dentist.git
+   ```
+2. Open `index.html` directly in your browser, or serve it using Python / Node:
+   ```bash
+   python -m http.server 8080
+   ```
+3. Open `http://localhost:8080` in your web browser.
 
